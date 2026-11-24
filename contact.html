@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/sombre.js" defer></script>
+        <script src="js/form.js" defer></script>
+    </head>
+    <body>
+        <header class="header-box">
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">contact</a>
+                <a href="https://developer.mozilla.org" target="_blank">Doc MDN</a>
+                <button id="theme">Mode sombre</button>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Me contacter</h1>
+
+                <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    <br>
+
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option>Stage</option>
+                        <option>Alternace</option>
+                        <option>Emploi</option>
+                    </select>
+                    <br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="messgae" rows="4" placeholder="Votre message"></textarea>
+                    <p id="erreurMessage"></p>
+                    <br>
+
+                    <input type="checkbox" id="recontacter" name="recontacter">
+                    <label for="recontacter">J'accepte d'être recontacté(e)</label>
+                    <br>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>© 2026 John</footer>
+    </body>
+</html>
